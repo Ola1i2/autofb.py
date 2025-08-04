@@ -45,7 +45,7 @@ def banner():
    ╚═════╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═
 
    ───────────────────────────────────────────────────────────────────────────────────
-   ] Developer : CEEJAY
+   ] Developer : Emmanuel
    Github    : CEEJAY_ERR0R
    ToolsType : Auto
    └─ Create
@@ -143,10 +143,10 @@ def approve_check():
         print("╚════════════════════════════════════╝")
         exit()
 
-# Request activation if license fails
-def request_activation():
+
+def request_activation(): approve
     name = input("✏ Enter your name for activation: ")
-    key = "CEEJAY-LOCK-XX2025=="  # Example key from bytes
+
     msg = f"Hi CEEJAY Admin,\n\nName: {name}\nKey: {key}\nRequesting activation"
     url = f"https://api.whatsapp.com/send?phone=+62852-1653-4995&text={msg}"
     subprocess.run(["am", "start", url])
